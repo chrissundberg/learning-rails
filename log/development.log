@@ -1,0 +1,26 @@
+# Logfile created on Thu Jun 12 13:33:05 -0600 2008
+
+Processing ViewerController#show (for 127.0.0.1 at 2008-06-12 13:33:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7c4dd0e7fc16f43fa2827a4f2403c8402268c6ae
+  Parameters: {"name"=>"home", "action"=>"show", "controller"=>"viewer"}
+  [4;36;1mPage Load (0.000000)[0m   [0;1mSELECT * FROM pages WHERE (pages."name" = 'home') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.01500 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-06-12 13:33:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--7c4dd0e7fc16f43fa2827a4f2403c8402268c6ae
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01600 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-06-12 13:33:33) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYWQwMzE0MWZmMTQ5MjgzZGVmMTBjZTQ5ZWRlNTRm%0AMzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--3cb41ef2f88b9cea891602ba053d9e96338bb4ad
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"538d12338cde8bfd8c585cff3221ed5f33ae4a7a", "action"=>"create", "controller"=>"sessions", "password"=>"changethis", "login"=>"admin"}
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM users WHERE (users."login" = 'admin') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.17200 (5 reqs/sec) | Rendering: 0.01600 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session]
